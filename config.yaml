@@ -13,12 +13,12 @@
 # Configure available LLM models for the agent to use
 
 models:
-  - name: step-3.5-flash
-    display_name: Step-3.5 Flash (Free)
+  - name: qwen3-8b
+    display_name: Qwen3-8B
     use: langchain_openai:ChatOpenAI
-    model: stepfun/step-3.5-flash:free
-    api_key: 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
-    base_url: https://openrouter.ai/api/v1
+    model: Qwen/Qwen3-8B
+    api_key: sk-evoyagjkyklaofsuakxmynbfpsyinlnuhpbxoflihpvtisym
+    base_url: https://api.siliconflow.cn/v1
     max_tokens: 4096
     temperature: 0.7
     supports_vision: false
