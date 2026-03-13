@@ -13,25 +13,15 @@
 # Configure available LLM models for the agent to use
 
 models:
-  - name: gpt-4o
-    display_name: GPT-4o
+  - name: step-3.5-flash
+    display_name: Step-3.5 Flash (Free)
     use: langchain_openai:ChatOpenAI
-    model: gpt-4o
-    api_key: sk-Qz06tzf33IaCmVcrwCRiacQmZFnikFFekvNuGAZeBjQpERVo
-    base_url: https://api.chatanywhere.tech/v1
+    model: stepfun/step-3.5-flash:free
+    api_key: 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
+    base_url: https://openrouter.ai/api/v1
     max_tokens: 4096
     temperature: 0.7
-    supports_vision: true
-
-  - name: gpt-4o-mini
-    display_name: GPT-4o Mini
-    use: langchain_openai:ChatOpenAI
-    model: gpt-4o-mini
-    api_key: sk-Qz06tzf33IaCmVcrwCRiacQmZFnikFFekvNuGAZeBjQpERVo
-    base_url: https://api.chatanywhere.tech/v1
-    max_tokens: 4096
-    temperature: 0.7
-    supports_vision: true
+    supports_vision: false
 
   # Example: Volcengine (Doubao) model
   # - name: doubao-seed-1.8
